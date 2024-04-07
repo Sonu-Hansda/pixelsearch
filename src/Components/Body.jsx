@@ -19,16 +19,21 @@ export default function Body() {
     }
     if (result){
         return (
-            <div>
+            <div className='mx-24 py-12'>
+                <h1>You have searched for :  {inputVal}</h1>
+            <ul className='mx-auto list-none pt-12'>
                 {result.organic_results.map((item)=>{
                     return (
-                        <li>
-                            <a href={item['displayed_link']}></a>
+                        <li className='hover:underline text-blue-800 pb-1'>
+                            <a href={item['displayed_link']}>
+
                             {item['title']}
+                            </a>
                             </li>
                     );
                 })}
-            </div>
+            </ul>
+                </div>
         );
     }else{
 
