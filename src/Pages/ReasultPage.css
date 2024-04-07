@@ -1,0 +1,27 @@
+.top_bar_menu{
+    width: 100%;
+    height: calc(50px);
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 20px;
+}
+.top_bar_menu > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    /* color: rgb(254, 53, 86); */
+}
+.result{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+.result > div{
+    width: 100%;
+    height: calc(100vh - 100px);
+    /* background-color: red; */
+    padding: 15px;
+}
