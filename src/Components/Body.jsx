@@ -24,11 +24,12 @@ export default function Body() {
             <ul className='mx-auto list-none pt-12'>
                 {result.organic_results.map((item)=>{
                     return (
-                        <li className='hover:underline text-blue-800 pb-1'>
-                            <a href={item['displayed_link']}>
+                        <li className=' pb-1 mb-8 border-b '>
+                            <a className='hover:underline text-blue-800' href={item['displayed_link']}>
 
                             {item['title']}
                             </a>
+                            <p className='text-sm'>{item['snippet']}</p>
                             </li>
                     );
                 })}
