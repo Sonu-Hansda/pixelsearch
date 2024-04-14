@@ -78,5 +78,3 @@ Contributions are welcome! If you'd like to contribute to Pixel Sync, feel free 
 This project is licensed under the **MIT License**. Feel free to use, modify, and distribute it as needed.
 
 ---
-
-Feel free to customize this readme further based on your project's specific details. Best of luck with your deployment, and keep up the great work! 🚀👏
