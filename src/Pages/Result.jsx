@@ -5,12 +5,13 @@ export default function ReasultPage() {
     const [loading, setLoading] = useState(true);
     const [result, setResult] = useState();
     const [images,setImages] = useState();
+    const url = import.meta.env.VITE_URL ?? 'http://localhost:3000';
     const getResult = async () => {
         try {
             setLoading(true);
         
-            const webres = await fetch(`http://localhost:3000/${query}`);
-            const imgres = await fetch(`http://localhost:3000/image/${query}`);
+            const webres = await fetch(`${url}/${query}`);
+            const imgres = await fetch(`${url}/image/${query}`);
             const webdata = await webres.json();
             const imgdata = await imgres.json();
             setResult(webdata);
